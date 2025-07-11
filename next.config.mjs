@@ -71,7 +71,6 @@ const nextConfig = {
       },
     ],
   },
-
   webpack(config) {
     // Add support for handling videos and GIF files
     config.module.rules.push({
