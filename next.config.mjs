@@ -5,6 +5,9 @@
 
 const nextConfig = {
   trailingSlash: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production",
+  },
   async redirects() {
     return [
       {
@@ -68,6 +71,7 @@ const nextConfig = {
       },
     ],
   },
+
   webpack(config) {
     // Add support for handling videos and GIF files
     config.module.rules.push({
