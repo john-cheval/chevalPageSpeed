@@ -36,6 +36,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
     "@types/react": "19.0.10",
     "postcss": "^8",
     "prettier": "3.4.2",

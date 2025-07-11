@@ -86,6 +86,33 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
 
+        {/* ForPageSpeed */}
+
+        <link
+          rel="preload"
+          href="/_next/static/css/a5d799381c4f241c.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <link
+          rel="preload"
+          href="/_next/static/css/c55bae0998168d0f.css"
+          as="style"
+          onLoad="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="/_next/static/css/a5d799381c4f241c.css"
+          />
+          <link
+            rel="stylesheet"
+            href="/_next/static/css/c55bae0998168d0f.css"
+          />
+        </noscript>
+
+        {/* Above PageSpeed */}
+
         {/* <Script id="disable-right-click" strategy="beforeInteractive">
           {`
             document.addEventListener('contextmenu', function(e) {
