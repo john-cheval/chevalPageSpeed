@@ -4,9 +4,7 @@
  */
 
 const nextConfig = {
-  target: "modern",
   trailingSlash: true,
-  swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
