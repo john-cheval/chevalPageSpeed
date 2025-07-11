@@ -4,7 +4,9 @@
  */
 
 const nextConfig = {
+  target: "modern",
   trailingSlash: true,
+  swcMinify: true,
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
@@ -71,7 +73,6 @@ const nextConfig = {
       },
     ],
   },
-
   webpack(config) {
     // Add support for handling videos and GIF files
     config.module.rules.push({
